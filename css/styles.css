@@ -170,7 +170,30 @@ ul {
     margin-left: auto;
     margin-right: auto 
 }
-
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), 
+    screen and (min-resolution: 192dpi) and (min-width: 1200px),
+    screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+    .hero-section{ 
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
+        url(../images/hero-desktop2x.jpg);
+    }
+}
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px), 
+    screen and (min-resolution: 192dpi) and (max-width: 767px),
+    screen and (min-resolution: 2dppx) and (max-width: 767px) {
+    .hero-section{ 
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
+        url(../images/hero-mobile2x.jpg);
+    }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), 
+    screen and (min-resolution: 192dpi) and (min-width: 768px),
+    screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    .hero-section{ 
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
+        url(../images/hero-tablet2x.jpg);
+    }
+}
 .hero-name {
     font-weight: 600;
     font-size: 56px;
@@ -970,7 +993,8 @@ padding: 32px 16px;
         padding: 24px 16px;
     }
    .hero-section {
-        padding: 112px 0;    
+        padding: 112px 0;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../images/hero-mobile.jpg);   
     }
     .skills-icon {
         display: none;  
@@ -1264,6 +1288,8 @@ padding: 32px 16px;
     .hero-section {
         padding-top: 112px;
         padding-bottom: 108px;
+        background-image:linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
+            url(../images/hero-tablet.jpg);
     }
     .skills {
         padding: 96px 0;        
