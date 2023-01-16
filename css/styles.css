@@ -1169,6 +1169,9 @@ padding: 32px 16px;
     }
 
     .close-btn {
+        position: absolute;
+        top: 40px;
+        right: 40px;
         margin-left: auto;
 
         display: flex;
